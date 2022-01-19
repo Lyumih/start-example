@@ -6,9 +6,67 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stars</title>
+    <style>
+        body {
+            padding: 0;
+            background: url('https://i.gifer.com/6KO.gif')
+
+        }
+        .container-star {
+            position: relative;
+            width: 100vh;
+            height: 100vh;
+        }
+        .button-star {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: none;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: transform 2s, opacity 1s;
+        }
+
+        .button-star:hover {
+            opacity: 1;
+            transform: scale(1.2, 1.2) rotate(1turn);
+        }
+
+        .earth {
+            background-image: url('https://i.gifer.com/fxVE.gif');
+            top: 130px;
+            left: 250px;
+
+        }
+
+        .star1 {
+            background-image: url('https://i.gifer.com/2EDV.gif');
+            top: 350px;
+            left: 550px;
+
+            width: 250px;
+            height: 250px;
+        }
+
+        .star2 {
+            background-image: url('https://i.gifer.com/WME4.gif');
+            top: 400px;
+            left: 50px;
+
+            width: 150px;
+            height: 150px;
+        }
+
+    </style>
 </head>
 <body>
-<h1>Stars</h1>
-
+    <div class="container-star">
+        <button class="button-star earth"></button>
+        <button class="button-star star1"></button>
+        <button class="button-star star2"></button>
+    </div>
 </body>
 </html>
